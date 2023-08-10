@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "tbl_user" (
+	"user_id"	INTEGER,
+	"user_name"	TEXT,
+	"user_contact"	TEXT,
+	"user_address"	TEXT,
+	PRIMARY KEY("user_id" AUTOINCREMENT)
+);
+INSERT INTO "tbl_user" VALUES (2,t,8,y);
+INSERT INTO "tbl_user" VALUES (3,tom,9,77);
+COMMIT;
